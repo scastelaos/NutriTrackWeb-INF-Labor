@@ -1,0 +1,12 @@
+# Coloque este arquivo em  uploads/documents/  com o nome  .htaccess  (com o ponto na frente).
+#
+# Regra desta pasta: NINGUEM abre nada daqui digitando um link no navegador.
+# Os PDFs (exames, planos, comprovantes) so saem pelo arquivo download.php,
+# que antes confere se quem pede e a cliente dona do documento ou a nutricionista.
+# (O PHP le os arquivos direto da pasta, por isso o download.php continua funcionando.)
+
+# nega QUALQUER acesso direto pelo navegador (Apache 2.4)
+Require all denied
+
+# nao mostra a lista de arquivos da pasta
+Options -Indexes
