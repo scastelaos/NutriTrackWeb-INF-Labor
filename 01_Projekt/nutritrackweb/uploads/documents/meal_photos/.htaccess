@@ -1,0 +1,12 @@
+# Coloque este arquivo em  uploads/meal_photos/  com o nome  .htaccess  (com o ponto na frente).
+#
+# Regra desta pasta: NINGUEM abre uma foto digitando o link no navegador.
+# As fotos das refeicoes so saem pelo arquivo view_image.php,
+# que antes confere se quem pede e a cliente dona da foto ou a nutricionista.
+# (O PHP le os arquivos direto da pasta, por isso o view_image.php continua funcionando.)
+
+# nega QUALQUER acesso direto pelo navegador (Apache 2.4)
+Require all denied
+
+# nao mostra a lista de arquivos da pasta
+Options -Indexes
