@@ -1,0 +1,12 @@
+# Coloque este arquivo em  uploads/profile/  com o nome  .htaccess  (com o ponto na frente).
+#
+# Regra desta pasta: ela so ENTREGA fotos. Nenhum arquivo de programa roda aqui.
+# Mesmo se alguem conseguisse enviar um arquivo .php, o servidor recusaria abri-lo.
+
+# nega qualquer arquivo de programa (PHP e variacoes)
+<FilesMatch "\.(php|phtml|php[0-9]|phps|pht|phar)$">
+    Require all denied
+</FilesMatch>
+
+# nao mostra a lista de arquivos da pasta
+Options -Indexes
