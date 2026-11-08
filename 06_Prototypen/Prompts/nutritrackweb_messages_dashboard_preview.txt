@@ -1,0 +1,75 @@
+Create a high-fidelity desktop web application screen for "NutriTrackWeb", a practice management platform for independent nutritionists. Frame size: 1440 x 1024 px. Show the "Messages" tab as the active screen. The look must be warm, human, professional and organized: a real nutrition practice, NOT a generic minimalist SaaS startup. Compact layout, no excessive white space, no gradients, no drop shadows, flat colors only. Use a friendly rounded sans-serif font (Inter or Nunito Sans), 14px body text.
+
+COLOR PALETTE (use exactly these hex values)
+- Primary dark green (sidebar and top header): #2F5D3A
+- Lighter green (header cards, dividers inside sidebar): #3F7449 and #4F7E59
+- Warm terracotta/amber accent: #C9803A
+- Page background cream: #F5EFE2
+- Panel background warm white: #FFFDF8
+- Panel borders and chip borders: #D9CDB3
+- Inactive tab background: #E8DEC8
+- Highlight for unread rows: #FBEFD9
+- Main text: #2B2A24
+- Secondary text: #6B6553
+- Sidebar text: #E4EBD9
+- Light leaf-green for logo icon: #C0DD97
+
+OVERALL LAYOUT: L-SHAPED STRUCTURE
+- A left sidebar, 240px wide, running the FULL height of the screen, color #2F5D3A.
+- A top header bar, 110px high, starting right after the sidebar and spanning the rest of the width, same color #2F5D3A.
+- The sidebar and header must look like ONE continuous L-shaped green structure with no visible seam between them.
+- The remaining area (content area) uses the cream background #F5EFE2.
+
+LEFT SIDEBAR (top to bottom)
+1. Logo: a small leaf icon in #C0DD97 next to the text "NutriTrackWeb" (medium weight, cream color).
+2. Profile block, centered: a round profile photo placeholder (circle, 80px, warm sand color #E4C99B with initials "MC" in dark brown), below it the name "Dra. Marina Costa" (medium weight) and a small subtitle "Nutritionist" in light green. A thin divider line (#4F7E59) below this block.
+3. Navigation menu, each item with a simple outline icon on the left and label, 8px rounded hover shape, in this order: Dashboard (layout-dashboard icon), Clients (users icon), Appointments (calendar icon), Messages (message-circle icon), Documents (file-text icon), Meal Photos (camera icon), Payments (wallet icon), Profile Settings (settings icon).
+4. The "Messages" item is the ACTIVE item: filled with cream #F5EFE2 with dark green #2F5D3A medium-weight text. All other items use #E4EBD9 text on transparent background.
+5. Bottom of the sidebar, separated by a thin divider: "Logout" with a logout icon.
+
+TOP HEADER (inside the green bar, 4 equal KPI cards in one row with 12px gaps, each card 8px rounded corners, icon on the left, big number and small label on the right, cream text)
+- Card 1: mail icon, number "5", label "New messages". This card uses the warm accent color #C9803A to stand out.
+- Card 2: calendar-event icon, number "8", label "Upcoming appointments". Card color #3F7449.
+- Card 3: coin icon, number "3", label "Open payments". Card color #3F7449.
+- Card 4: user-check icon, number "2", label "Pending approvals". Card color #3F7449.
+
+MAIN CONTENT AREA: FOLDER-STYLE TABS
+- Above the panel, a row of 5 tabs that look like folder/spreadsheet tabs: Clients, Messages, Appointments, Documents, Payments. Tabs have rounded top corners only (8px), 4px gap between them.
+- Only "Messages" is active: background #FFFDF8, text #2F5D3A medium weight, 1px border #2F5D3A. The active tab visually connects to the panel below it.
+- Inactive tabs: background #E8DEC8, text #6B6553, 1px border #D9CDB3.
+- Below the tabs, a large panel with background #FFFDF8, 1px border #D9CDB3, 8px rounded corners (except the top-left corner, which connects to the active tab), 16px padding.
+
+MESSAGES PANEL CONTENT
+Toolbar row at the top of the panel:
+- A search field (white, 1px #D9CDB3 border, 8px radius) with a search icon and placeholder "Search by client or subject".
+- Four pill-shaped filter chips on the right: "All 24" (ACTIVE: filled #2F5D3A with cream text), "New 5", "Answered 14", "Closed 5" (inactive: cream background #F5EFE2, 1px #D9CDB3 border, #6B6553 text).
+
+Message list (7 rows, compact, each row about 60px high, thin 1px bottom divider #E8DEC8). Each row, from left to right:
+- Round client avatar placeholder (40px) with colored background and initials
+- Client name (14px) with the message subject below it (13px, #6B6553, single line)
+- Date, right aligned, 12px, #6B6553
+- Status badge: pill shape, 12px medium text, fixed width
+
+Rows (sorted with unread first):
+1. Avatar "AL" (peach #F2C9A0) | Ana Beatriz Lima | "Question about dinner options" | Today, 09:42 | New
+2. Avatar "LH" (light green #C0DD97) | Lukas Hoffmann | "Blood test results uploaded" | Today, 08:15 | New
+3. Avatar "CM" (pink #F4C0D1) | Carolina Mendes | "Can I swap my lunch plan?" | Yesterday | New
+4. Avatar "SW" (light blue #B5D4F4) | Sophie Weber | "Rescheduling next appointment" | Oct 20 | Answered
+5. Avatar "RS" (yellow #FAC775) | Rafael Santos | "Feeling hungry in the afternoon" | Oct 18 | Answered
+6. Avatar "JF" (lavender #CECBF6) | Julia Fischer | "Thank you for the meal plan" | Oct 15 | Closed
+7. Avatar "MO" (mint #9FE1CB) | Mateus Oliveira | "Payment receipt attached" | Oct 12 | Closed
+
+Row styling by status:
+- "New" rows: highlighted background #FBEFD9 with 8px rounded corners, client name in medium weight (bold-ish). Badge: background #C9803A, text #FFFDF8.
+- "Answered" rows: normal background. Badge: background #DDEBD2, text #27500A.
+- "Closed" rows: normal background. Badge: background #E4E1D8, text #444441.
+
+Footer of the panel: small 12px text in #6B6553, left "Showing 7 of 24 messages", right "Page 1 of 4".
+
+STYLE RULES
+- Flat design, no shadows, no gradients, no glass effects.
+- Corners: 8px for controls and cards, fully rounded for pills and avatars.
+- Outline icon style (Tabler or Lucide), 18px, consistent stroke.
+- Strong contrast between the dark green navigation and the light cream work area.
+- Everything fully visible in one screen: sidebar, header with 4 KPIs, tabs, filter toolbar, 7 message rows and footer.
+- Use auto layout and name layers clearly (Sidebar, Header, KPI Card, Tabs, Message Row, Badge) so the design is easy to edit.

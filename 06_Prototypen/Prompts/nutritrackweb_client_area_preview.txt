@@ -1,0 +1,78 @@
+Create a high-fidelity desktop web application screen for "NutriTrackWeb", a practice management platform for independent nutritionists. This is the CLIENT AREA (what the nutritionist's client sees after the account is approved). Frame size: 1440 x 1024 px. Show the "Overview" tab as the active screen. The look must be warm, human, professional and organized: a real nutrition practice, NOT a generic minimalist SaaS startup. Compact layout, no excessive white space, no gradients, no drop shadows, flat colors only. Use a friendly rounded sans-serif font (Inter or Nunito Sans), 14px body text.
+
+COLOR PALETTE (use exactly these hex values)
+- Primary dark green (sidebar and top header): #2F5D3A
+- Lighter green (header cards, dividers inside sidebar): #3F7449 and #4F7E59
+- Warm terracotta/amber accent: #C9803A
+- Page background cream: #F5EFE2
+- Panel and card background warm white: #FFFDF8
+- Panel and card borders: #D9CDB3
+- Inactive tab background: #E8DEC8
+- Highlight background for the appointment card: #FBEFD9
+- Row dividers: #E8DEC8
+- Main text: #2B2A24
+- Secondary text: #6B6553
+- Sidebar text: #E4EBD9
+- Light leaf-green for logo icon: #C0DD97
+- PDF icon red: #A32D2D
+
+OVERALL LAYOUT: L-SHAPED STRUCTURE
+- A left sidebar, 240px wide, running the FULL height of the screen, color #2F5D3A.
+- A top header bar, 110px high, starting right after the sidebar and spanning the rest of the width, same color #2F5D3A.
+- The sidebar and header must look like ONE continuous L-shaped green structure with no visible seam between them.
+- The remaining area (content area) uses the cream background #F5EFE2.
+
+LEFT SIDEBAR (top to bottom)
+1. Logo: a small leaf icon in #C0DD97 next to the text "NutriTrackWeb" (medium weight, cream color).
+2. Client profile block, centered: a round profile photo placeholder (circle, 80px, peach #F2C9A0 with initials "AL" in dark brown #5B3A12), below it the name "Ana Beatriz Lima" (medium weight) and a small subtitle "Your nutritionist: Dra. Marina Costa" in light green #C9D9BD. A thin divider line (#4F7E59) below this block.
+3. Navigation menu, each item with a simple outline icon on the left and a label, 8px rounded shape, in this order: Home (home icon), Appointments (calendar icon), Messages (message-circle icon), Documents (file-text icon), Meal Photos (camera icon), Payments (wallet icon), My Profile (user icon).
+4. The "Home" item is the ACTIVE item: filled with cream #F5EFE2 with dark green #2F5D3A medium-weight text. All other items use #E4EBD9 text on transparent background.
+5. Bottom of the sidebar, separated by a thin divider: "Logout" with a logout icon.
+
+TOP HEADER (inside the green bar, 4 equal cards in one row with 12px gaps, each card 8px rounded corners, icon on the left, value on top and small label below, cream text)
+- Card 1: calendar-event icon, value "Oct 27, 10:00", label "Next appointment". This card uses the warm accent color #C9803A to stand out.
+- Card 2: mail icon, value "1", label "New reply". Card color #3F7449.
+- Card 3: coin icon, value "Due Nov 5", label "Payment". Card color #3F7449.
+- Card 4: scale icon, value "64.2 kg", label "Current weight". Card color #3F7449.
+
+MAIN CONTENT AREA: FOLDER-STYLE TABS
+- Above the panel, a row of 5 tabs that look like folder/spreadsheet tabs: Overview, Messages, Documents, Meal Photos, Payments. Tabs have rounded top corners only (8px), 4px gap between them.
+- Only "Overview" is active: background #FFFDF8, text #2F5D3A medium weight, 1px border #2F5D3A. The active tab visually connects to the panel below it.
+- Inactive tabs: background #E8DEC8, text #6B6553, 1px border #D9CDB3.
+- Below the tabs, a large panel with background #FFFDF8, 1px border #D9CDB3, 8px rounded corners (except the top-left corner, which connects to the active tab), 16px padding.
+
+OVERVIEW PANEL CONTENT
+All cards inside the panel: background #FFFDF8, 1px border #D9CDB3, 8px radius, 12px padding. Each card has a small title row: outline icon + title in medium weight #2F5D3A (13px), with a secondary action aligned to the right.
+
+Row 1: full-width card "Next appointment" with background #FBEFD9
+- Left: a rounded date block (background #C9803A, text #FFFDF8, 8px radius) showing "OCT" in small text and "27" in large medium-weight text.
+- Middle: title "Your next appointment" (medium weight) and below it "Tuesday, 10:00 with Dra. Marina Costa" in #6B6553.
+- Right: two buttons side by side. Primary button "Join video call" with a video icon (filled #2F5D3A, cream text). Secondary button "Request reschedule" with a calendar-time icon (transparent background, 1px #2F5D3A border, #2F5D3A text). Both 8px radius.
+
+Row 2: two equal cards side by side, 10px gap
+- Left card "Weight and height" (chart-line icon), link "History" on the right in #6B6553. Content: a simple line chart with 6 data points trending slowly downward (weight over time), 2px #2F5D3A line, round points, the latest point larger and colored #C9803A, two faint horizontal gridlines (#E8DEC8). Below the chart, small text left "Height 1.68 m" and right "Last update: Oct 20" in #6B6553.
+- Right card "Messages" (message-circle icon), with a small filled button "+ New" (#2F5D3A, cream text) on the right. Three compact list rows with dividers:
+  1. "Question about dinner options" / subtitle "Dra. Marina replied today" / badge "Answered"
+  2. "Can I swap my lunch plan?" / subtitle "Sent yesterday" / badge "New"
+  3. "Thank you for the meal plan" / subtitle "Oct 15" / badge "Closed"
+  Badges are pills with 11px medium text: New = background #C9803A with text #FFFDF8; Answered = background #DDEBD2 with text #27500A; Closed = background #E4E1D8 with text #444441.
+
+Row 3: two equal cards side by side, 10px gap
+- Left card "Documents" (file-text icon), with an outline button "Upload PDF" (upload icon) on the right. Three list rows, each with a red PDF icon (#A32D2D) on the left, file name, a small subtitle with the document type, and a green download icon (#2F5D3A) on the right:
+  1. "Nutrition plan.pdf" / "Nutrition Plan"
+  2. "Blood test.pdf" / "Blood Test"
+  3. "Payment proof.pdf" / "Payment Proof"
+- Right card "Meal photos" (camera icon), with an outline button "Add photo" (upload icon) on the right. A 2x2 grid of photo placeholders (8px radius, each with a small photo icon and a label below it):
+  - "Breakfast" on #FAC775 with text #633806
+  - "Lunch" on #C0DD97 with text #27500A
+  - "Dinner" on #F5C4B3 with text #712B13
+  - "Other" on #E4E1D8 with text #444441
+
+STYLE RULES
+- Flat design, no shadows, no gradients, no glass effects.
+- Corners: 8px for controls and cards, fully rounded for pills and avatars.
+- Outline icon style (Tabler or Lucide), 18px, consistent stroke.
+- Strong contrast between the dark green navigation and the light cream work area.
+- Same visual language as the nutritionist dashboard: same L-shaped green structure, same folder tabs, same badges, same palette.
+- Everything fully visible in one screen: sidebar, header with 4 cards, tabs, appointment card, weight chart, messages, documents and meal photos.
+- Use auto layout and name layers clearly (Sidebar, Header, Header Card, Tabs, Appointment Card, Weight Chart, Message Row, Badge, Document Row, Photo Placeholder) so the design is easy to edit.
