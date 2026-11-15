@@ -65,7 +65,7 @@ NutriTrackWeb ist eine Webplattform für selbstständige Ernährungsberaterinnen
 |---|---|
 | `01_Projekt/nutritrackweb` | Quellcode der Anwendung |
 | `02_Datenbank` | SQL-Dump und ER-Diagramm |
-| `03_Dokumentation` | Pflichtenheft, Benutzer- und technische Dokumentation, Arbeitsaufwand |
+| `03_Dokumentation` | Benutzer- und technische Dokumentation |
 | `06_Prototypen` | UI/UX-Prototypen |
 
 ## Entwicklung und Veröffentlichung
